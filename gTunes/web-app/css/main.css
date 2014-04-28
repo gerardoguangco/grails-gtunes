@@ -1,7 +1,7 @@
 /* FONT STACK */
 body,
 input, select, textarea {
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-family: "Myriad Pro", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -38,7 +38,7 @@ html * {
 
 body {
 	background: #ffffff;
-	color: green;
+	color: #333333;
 	margin: 0 auto;
 	max-width: 960px;
 	overflow-x: hidden; /* prevents box-shadow causing a horizontal scrollbar in firefox when viewport < 960px wide */
@@ -73,7 +73,7 @@ a:hover, a:active {
 }
 
 h1 {
-	color: #48802c;
+	color: #12C7FF;
 	font-weight: normal;
 	font-size: 1.25em;
 	margin: 0.8em 0 0.3em 0;
@@ -108,7 +108,7 @@ img {
 }
 
 .footer {
-	background: #abbf78;
+	background: #FFFFFF;
 	color: #000;
 	clear: both;
 	font-size: 0.8em;
@@ -225,7 +225,7 @@ fieldset,
 
 .fieldcontain label,
 .fieldcontain .property-label {
-	color: #666666;
+	color: #12C7FF;
 	text-align: right;
 	width: 25%;
 }
@@ -283,7 +283,7 @@ input:focus, select:focus, textarea:focus {
 }
 
 .required-indicator {
-	color: #48802C;
+	color: #978BE8;
 	display: inline-block;
 	font-weight: bold;
 	margin-left: 0.3em;
@@ -386,7 +386,7 @@ fieldset.embedded legend {
 
 input:invalid, select:invalid, textarea:invalid {
 	background: #fff3f3;
-	border-color: #ffaaaa;
+	border-color: #2EFF84;
 	color: #cc0000;
 }
 
