@@ -2,6 +2,7 @@
 body,
 input, select, textarea {
 	font-family: "Myriad Pro", sans-serif;
+
 }
 
 
@@ -39,13 +40,13 @@ html * {
 
 body {
     background-image: url('h1.jpg');
-	color: #333333;
 	margin: 0 auto;
 	max-width: 960px;
 	overflow-x: hidden; /* prevents box-shadow causing a horizontal scrollbar in firefox when viewport < 960px wide */
 	   -moz-box-shadow: 0 0 0.3em #255b17;
 	-webkit-box-shadow: 0 0 0.3em #255b17;
 	        box-shadow: 0 0 0.3em #255b17;
+
 }
 
 #grailsLogo {
@@ -65,7 +66,7 @@ body {
 }
 
 a:link, a:visited, a:hover {
-	color: #48802c;
+	color: #000000;
 }
 
 a:hover, a:active {
@@ -73,7 +74,7 @@ a:hover, a:active {
 }
 
 h1 {
-	color: #12C7FF;
+	color: #FFFFFF;
 	font-weight: normal;
 	font-size: 1.25em;
 	margin: 0.8em 0 0.3em 0;
@@ -111,7 +112,7 @@ img {
 .footer {
     opacity:0;
     background:#ffffff;
-	color: #000;
+	color: #FFFFFF;
 	clear: both;
 	font-size: 0.8em;
 	margin-top: 1.5em;
@@ -144,6 +145,7 @@ img {
 	        box-shadow: 0 0 3px 1px #aaaaaa;
 	zoom: 1;
     opacity: .4;
+
 }
 
 .nav ul {
@@ -218,12 +220,14 @@ fieldset,
 	zoom: 1;
 	border: none;
 
+
 }
 
 .property-list .fieldcontain {
 	list-style: none;
 	overflow: hidden;
 	zoom: 1;
+    color: #FFFFFF;
 }
 
 .fieldcontain {
@@ -233,7 +237,7 @@ fieldset,
 
 .fieldcontain label,
 .fieldcontain .property-label {
-	color: #12C7FF;
+	color: #FFFFFF;
 	text-align: right;
 	width: 25%;
 }
@@ -292,34 +296,44 @@ input:focus, select:focus, textarea:focus {
 }
 
 .required-indicator {
-	color: #978BE8;
+	color: #000000;
 	display: inline-block;
 	font-weight: bold;
 	margin-left: 0.3em;
 	position: relative;
 	top: 0.1em;
+    opacity:0.4;
 }
 
 ul.one-to-many {
 	display: inline-block;
 	list-style-position: inside;
 	vertical-align: top;
+    color: #FFFFFF;
 }
 
 .ie6 ul.one-to-many, .ie7 ul.one-to-many {
 	display: inline;
 	zoom: 1;
+    color: #FFFFFF;
 }
 
-ul.one-to-many li.add {
+ul.one-to-many li.add{
 	list-style-type: none;
+    color: #FFFFFF;
+
+}
+
+ul.one-to-many li.add.a{
+    color: #FFFFFF;
+
 }
 
 /* EMBEDDED PROPERTIES */
 
 fieldset.embedded {
 	background-color: transparent;
-	border: 1px solid #CCCCCC;
+	border: 1px solid #FFFFFF;
 	margin-left: 0;
 	margin-right: 0;
 	padding-left: 0;
@@ -344,21 +358,21 @@ fieldset.embedded legend {
 }
 
 .message {
-	background: #f3f3ff;
-	border: 1px solid #b2d1ff;
-	color: #006dba;
-	   -moz-box-shadow: 0 0 0.25em #b2d1ff;
-	-webkit-box-shadow: 0 0 0.25em #b2d1ff;
-	        box-shadow: 0 0 0.25em #b2d1ff;
+	background: #FFFFFF;
+	/*border: 1px solid #FFFFFF;*/
+	color: #FFFFFF;
+	   -moz-box-shadow: 0 0 0.25em #ffffff;
+	-webkit-box-shadow: 0 0 0.25em #ffffff;
+	        box-shadow: 0 0 0.25em #ffffff;
 }
 
 .errors {
-	background: #fff3f3;
-	border: 1px solid #ffaaaa;
-	color: #cc0000;
-	   -moz-box-shadow: 0 0 0.25em #ff8888;
-	-webkit-box-shadow: 0 0 0.25em #ff8888;
-	        box-shadow: 0 0 0.25em #ff8888;
+	background: #ffffff;
+	border: 1px solid #b2d1ff;
+	color: #b2d1ff;
+	   -moz-box-shadow: 0 0 0.25em #ffffff;
+	-webkit-box-shadow: 0 0 0.25em #ffffff;
+	        box-shadow: 0 0 0.25em #ffffff;
 }
 
 .errors ul,
@@ -381,14 +395,14 @@ fieldset.embedded legend {
 
 .error input, .error select, .error textarea {
 	background: #fff3f3;
-	border-color: #ffaaaa;
-	color: #cc0000;
+	border-color: #FFFFFF;
+	color: #FFFFFF;
 }
 
 .error input:focus, .error select:focus, .error textarea:focus {
-	   -moz-box-shadow: 0 0 0.5em #2EFF84;
-	-webkit-box-shadow: 0 0 0.5em #2EFF84;
-	        box-shadow: 0 0 0.5em #2EFF84;
+	   -moz-box-shadow: 0 0 0.5em #FFFFFF;
+	-webkit-box-shadow: 0 0 0.5em #FFFFFF;
+	        box-shadow: 0 0 0.5em #FFFFFF;
 }
 
 /* same effects for browsers that support HTML5 client-side validation (these have to be specified separately or IE will ignore the entire rule) */
@@ -396,34 +410,42 @@ fieldset.embedded legend {
 input:invalid, select:invalid, textarea:invalid {
 	background: #fff3f3;
 	border-color: #2EFF84;
-	color: #2EFF84;
+	color: #FFFFFF;
 }
 
 input:invalid:focus, select:invalid:focus, textarea:invalid:focus {
-	   -moz-box-shadow: 0 0 0.5em #2EFF84;
-	-webkit-box-shadow: 0 0 0.5em #2EFF84;
-	        box-shadow: 0 0 0.5em #2EFF84;
+	   -moz-box-shadow: 0 0 0.5em #FFFFFF;
+	-webkit-box-shadow: 0 0 0.5em #FFFFFF;
+	        box-shadow: 0 0 0.5em #FFFFFF;
 }
 
 /* TABLES */
 
 table {
-	border-top: 1px solid #DFDFDF;
 	border-collapse: collapse;
 	width: 100%;
 	margin-bottom: 1em;
+
 }
 
 tr {
 	border: 0;
+    opacity: 0.7;
+
 }
+
 
 tr>td:first-child, tr>th:first-child {
 	padding-left: 1.25em;
+    opacity: 0.6;
+
 }
 
 tr>td:last-child, tr>th:last-child {
 	padding-right: 1.25em;
+    opacity: 0.6;
+
+
 }
 
 td, th {
@@ -433,65 +455,87 @@ td, th {
 	vertical-align: top;
 }
 
+
+
 th {
-	background-color: #efefef;
-	background-image: -moz-linear-gradient(top, #ffffff, #eaeaea);
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff), color-stop(1, #eaeaea));
-	    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr = '#ffffff', EndColorStr = '#eaeaea');
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#eaeaea')";
-	color: #666666;
-	font-weight: bold;
-	line-height: 1.7em;
-	padding: 0.2em 0.6em;
+    /*background-color: #efefef;*/
+    background-image: -moz-linear-gradient(top, #ffffff, #eaeaea);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff), color-stop(1, #eaeaea));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#eaeaea');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#eaeaea')";
+    /*color: #FFFFFF;*/
+    font-weight: bold;
+    line-height: 1.7em;
+    padding: 0.2em 0.6em;
+
 }
 
 thead th {
 	white-space: nowrap;
+
+
 }
 
 th a {
 	display: block;
 	text-decoration: none;
+
 }
 
 th a:link, th a:visited {
 	color: #666666;
+
 }
 
 th a:hover, th a:focus {
 	color: #333333;
+
 }
 
 th.sortable a {
 	background-position: right;
 	background-repeat: no-repeat;
 	padding-right: 1.1em;
+
+
 }
 
 th.asc a {
 	background-image: url(../images/skin/sorted_asc.gif);
+
+
 }
 
 th.desc a {
 	background-image: url(../images/skin/sorted_desc.gif);
+
+
 }
 
 .odd {
 	background: #f7f7f7;
+    opacity: 0.7;
+
+
+
 }
 
 .even {
 	background: #ffffff;
+    opacity: 0.7;
+
+
 }
 
 th:hover, tr:hover {
-	background: #E1F2B6;
+	background: #EFEFEF;
+
+
 }
 
 /* PAGINATION */
 
 .pagination {
-	border-top: 0;
 	margin: 0;
 	padding: 0.3em 0.2em;
 	text-align: center;
@@ -499,6 +543,8 @@ th:hover, tr:hover {
 	-webkit-box-shadow: 0 0 3px 1px #AAAAAA;
 	        box-shadow: 0 0 3px 1px #AAAAAA;
 	background-color: #EFEFEF;
+    opacity:0.5;
+
 }
 
 .pagination a,
@@ -516,7 +562,7 @@ th:hover, tr:hover {
 .pagination a:hover, .pagination a:focus,
 .pagination .currentStep {
 	background-color: #999999;
-	color: #ffffff;
+    color: #FFFFFF;
 	outline: none;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
 }
@@ -524,7 +570,7 @@ th:hover, tr:hover {
 .no-borderradius .pagination a:hover, .no-borderradius .pagination a:focus,
 .no-borderradius .pagination .currentStep {
 	background-color: transparent;
-	color: #444444;
+	color: #FFFFFF;
 	text-decoration: underline;
 }
 
